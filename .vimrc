@@ -50,7 +50,7 @@ set ignorecase " ignore case for searches
 set smartcase " unless you type an uppercase letter
 set showtabline=2 " always show tabline
 set smarttab
-set backspace=indent,eol,start " allow backspacing over everything in insert"
+set backspace=indent,eol,start " allow backspacing over everything in insert
 set splitbelow " new window goes below
 set splitright " new window goes right
 set ruler " show the cursor position
