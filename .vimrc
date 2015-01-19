@@ -22,6 +22,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'bling/vim-airline'
+Plugin 'mxw/vim-jsx'
 "Plugin 'Lokaltog/vim-easymotion' These 4 might be worth checking out
 "Plugin 'justinmk/vim-sneak'
 "Plugin 'tpope/vim-surround'
