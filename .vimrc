@@ -1,3 +1,4 @@
+
 set nocompatible " be iMproved, required
 
 filetype off " required
@@ -64,6 +65,9 @@ set undofile " persistent undo
 set showcmd " show commands
 set timeoutlen=1500 " timeout length for leader key
 set clipboard=unnamed " share clipboard with OS
+set guioptions-=r " remove right scrollbar
+set guioptions-=l " remove left scrollbar
+set guioptions-=L " remove left scrollbar when there is a vertical split (NERDTree)
 
 " check why this does not work
 " set breakindent
