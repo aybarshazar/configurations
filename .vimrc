@@ -106,6 +106,7 @@ let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:javascript_enable_domhtmlcss=1
 
 " syntastic options
+" Install language specific stuff: jshint, jsxhint etc.
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
