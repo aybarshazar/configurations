@@ -1,4 +1,3 @@
-
 set nocompatible " be iMproved, required
 
 filetype off " required
@@ -66,10 +65,12 @@ set showcmd " show commands
 set timeoutlen=1500 " timeout length for leader key
 set clipboard=unnamed " share clipboard with OS
 
-" macvim scrollbars
+" macvim options, move these to .gvimrc file
+color base16-monokai
 set guioptions-=r " remove right scrollbar
 set guioptions-=l " remove left scrollbar
 set guioptions-=L " remove left scrollbar when there is a vertical split (NERDTree)
+"set lines=999 " use this after fullscreen. macvim cuts the top and bottom parts of the app
 
 " check why this does not work
 " set breakindent
@@ -94,7 +95,8 @@ set wildmode=list:longest
 " colorscheme options
 set background=dark
 syntax on "syntax highlighting active
-color base16-monokai
+"set t_Co=256 " enable 256 colors in terminal vim
+" check base16 themes for iterm
 
 " vim-indent-guides options
 let g:indent_guides_enable_on_vim_startup=1
@@ -104,7 +106,6 @@ let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:javascript_enable_domhtmlcss=1
 
 " syntastic options
-" Install language specific stuff: jshint, jsxhint etc.
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
