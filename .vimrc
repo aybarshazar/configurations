@@ -3,7 +3,9 @@ set nocompatible " be iMproved, required
 filetype off " required
 
 " set leader key
-let mapleader=","
+" map space to default leader key (\)
+" otherwise nothing will show up in showcmd corner
+map <Space> <leader>
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
