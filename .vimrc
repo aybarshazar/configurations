@@ -24,8 +24,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'bling/vim-airline'
-Plugin 'mxw/vim-jsx'
-"Plugin 'Lokaltog/vim-easymotion' These 4 might be worth checking out
+"Plugin 'Lokaltog/vim-easymotion' " These 4 might be worth checking out
 "Plugin 'justinmk/vim-sneak'
 "Plugin 'tpope/vim-surround'
 "Plugin 'tpope/vim-fugitive' " git stuff, plays good with vim-airline
@@ -85,10 +84,6 @@ autocmd BufReadPost,BufNewFile * set relativenumber
 "remap jk to escape in insert mode for faster mode changing
 inoremap jk <Esc>
 
-"speed up viewport scrolling
-nnoremap <C-e> 3<C-e>
-nnoremap <C-y> 3<C-y>
-
 set wildchar=<TAB> "tab key activates command-line wildcard expansion
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.psd,*.min.js
 set wildmenu "hitting tab in command mode will show completions
@@ -115,8 +110,8 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_javascript_checkers = ['jsxhint']
-set tabstop=4 "for jshint & jsxhint
+let g:syntastic_javascript_checkers = ['jshint']
+set tabstop=4 "for jshint
 "syntastic options
 
 "tern options
@@ -128,10 +123,6 @@ let g:tern_show_argument_hints='on_hold'
 
 "delimitMate options
 let delimitMate_expand_cr=1
-
-"NERDTree options
-"sync NERDTree with current file
-map <C-o> :NERDTreeToggle %<CR>
 
 "ctrlp options
 let g:ctrlp_working_path_mode='r' "use the nearest .git directory as cwd
@@ -161,5 +152,4 @@ set laststatus=2 "Always display statusline in all windows
 
 "Filetype specific options
 autocmd BufNewFile,BufReadPost *.js setl et sts=2 sw=2
-autocmd BufNewFile,BufReadPost *.jsx setl et sts=2 sw=2
 autocmd BufNewFile,BufReadPost *.html setl et sts=2 sw=2
