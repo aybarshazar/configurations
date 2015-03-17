@@ -124,6 +124,9 @@ let g:tern_show_argument_hints='on_hold'
 "delimitMate options
 let delimitMate_expand_cr=1
 
+"nerdcommenter options
+let NERDSpaceDelims=1
+
 "ctrlp options
 let g:ctrlp_working_path_mode='r' "use the nearest .git directory as cwd
 let g:ctrlp_custom_ignore = {
