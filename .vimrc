@@ -19,15 +19,15 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'marijnh/tern_for_vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'bling/vim-airline'
-"Plugin 'Lokaltog/vim-easymotion' " These 4 might be worth checking out
+"Plugin 'Lokaltog/vim-easymotion' " These might be worth checking out
 "Plugin 'justinmk/vim-sneak'
 "Plugin 'tpope/vim-surround'
 "Plugin 'tpope/vim-fugitive' " git stuff, plays good with vim-airline
+"Plugin 'terryma/vim-multiple-cursors'
 
 "All of your Plugins must be added before the following line
 call vundle#end() " required
@@ -66,12 +66,18 @@ set showcmd "show commands
 set timeoutlen=1500 "timeout length for leader key
 set clipboard=unnamed "share clipboard with OS
 
-"macvim options, move these to .gvimrc file
-color base16-monokai
-set guioptions-=r "remove right scrollbar
-set guioptions-=l "remove left scrollbar
-set guioptions-=L "remove left scrollbar when there is a vertical split (NERDTree)
-"set lines=999 "use this after fullscreen. macvim cuts the top and bottom parts of the app
+"colorscheme options
+set background=dark
+syntax on "syntax highlighting active
+"set t_Co=256 "enable 256 colors in terminal vim
+
+if has("gui_running")
+    color base16-monokai
+    set guioptions-=r "remove right scrollbar
+    set guioptions-=l "remove left scrollbar
+    set guioptions-=L "remove left scrollbar when there is a vertical split (NERDTree)
+    "set lines=999 "use this after fullscreen. macvim cuts the top and bottom parts of the app
+endif
 
 "check why this does not work
 "set breakindent
@@ -88,12 +94,6 @@ set wildchar=<TAB> "tab key activates command-line wildcard expansion
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.psd,*.min.js
 set wildmenu "hitting tab in command mode will show completions
 set wildmode=list:longest
-
-"colorscheme options
-set background=dark
-syntax on "syntax highlighting active
-"set t_Co=256 "enable 256 colors in terminal vim
-"check base16 themes for iterm
 
 "vim-indent-guides options
 let g:indent_guides_enable_on_vim_startup=1
@@ -113,13 +113,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_javascript_checkers = ['jshint']
 set tabstop=4 "for jshint
 "syntastic options
-
-"tern options
-"https://github.com/marijnh/tern_for_vim/blob/master/autoload/tern.vim
-let g:tern_map_prefix='<Leader>'
-let g:tern_map_keys=1
-" let tern#is_show_argument_hints_enabled=1
-let g:tern_show_argument_hints='on_hold'
 
 "delimitMate options
 let delimitMate_expand_cr=1
