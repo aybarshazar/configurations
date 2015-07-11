@@ -162,6 +162,10 @@ set wildmode=list:longest
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 
+" nerdtree options
+" use CTRL-o to toggle nerdtree
+map <C-o> :NERDTreeToggle<CR>
+
 " vim-javascript options
 let g:javascript_enable_domhtmlcss=1
 
