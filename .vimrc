@@ -217,4 +217,5 @@ set laststatus=2 " Always display statusline in all windows
 " Filetype specific options
 autocmd BufNewFile,BufReadPost *.js setl et sts=2 sw=2
 autocmd BufNewFile,BufReadPost *.html setl et sts=2 sw=2
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
