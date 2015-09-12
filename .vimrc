@@ -147,6 +147,10 @@ if has("gui_running")
 
     " remove left scrollbar when there is a vertical split (NERDTree)
     set guioptions-=L
+
+    " http://superuser.com/questions/304385/gvim-flickers-where-it-would-normally-sound-a-bell
+    " check out visualbell (:h visualbell), disable gvim flash
+    set novb
 endif
 
 " should I map escape to capslock or space?
