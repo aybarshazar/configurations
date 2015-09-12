@@ -212,7 +212,8 @@ nmap <leader>7 <Plug>AirlineSelectTab7
 nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 let g:airline#extensions#tabline#fnamemod=':t' " last component of filename
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14 " font and font size
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 14 " font/font size for ubuntu
+" set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14 " font/font size for mac
 set laststatus=2 " Always display statusline in all windows
 
 " Filetype specific options
