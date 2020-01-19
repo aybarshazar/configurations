@@ -78,3 +78,16 @@ for key, app in pairs(apps) do
     nextWindow:focus()
   end)
 end
+
+-----------------------------------------------
+-- Debugging / logging utils
+-----------------------------------------------
+
+-- print('--------------------------------------')
+-- for i,v in ipairs(windows) do print(i, v) end
+-- print('--------------------------------------')
+
+-- local log = hs.logger.new('mymodule','debug')
+-- log.i('Initializing')
+-- log.i(hs.inspect(apps))
+-- log.i(hs.inspect(#apps))
