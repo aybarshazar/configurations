@@ -12,6 +12,9 @@ spoon.ReloadConfiguration:start()
 -- Hyper i to show window hints
 -----------------------------------------------
 
+hs.hints.showTitleThresh = 10
+hs.hints.hintChars = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0' }
+
 hs.hotkey.bind(hyper, "i", function()
   hs.hints.windowHints()
 end)
