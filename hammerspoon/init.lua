@@ -1,4 +1,5 @@
-local hyper = {"ctrl", "alt", "cmd"}
+-- Map this combination to a key with Karabiner-Elements
+local hyper = { "cmd", "alt", "ctrl", "shift" }
 
 -----------------------------------------------
 -- https://www.hammerspoon.org/Spoons/ReloadConfiguration.html
