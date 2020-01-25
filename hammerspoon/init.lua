@@ -1,3 +1,5 @@
+-- Copy this file to ~/.hammerspoon/ directory
+
 -- Map this combination to a key with Karabiner-Elements
 local hyper = { "cmd", "alt", "ctrl", "shift" }
 
