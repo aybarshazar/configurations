@@ -42,10 +42,12 @@ spoon.MiroWindowsManager:bindHotkeys({
 -----------------------------------------------
 
 local apps = {
-  c = 'Google Chrome',
-  a = 'Atom',
-  s = 'Sublime Text',
-  t = 'iTerm'
+  ['1'] = 'Google Chrome',
+  ['2'] = 'Sublime Text',
+  ['3'] = 'iTerm',
+  ['4'] = 'SourceTree',
+  ['5'] = 'Slack',
+  ['6'] = 'Spotify'
 }
 
 for key, app in pairs(apps) do
