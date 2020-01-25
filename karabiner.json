@@ -18,9 +18,9 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change right_command to command+control+option+shift.",
+                                "description": "Change right_option to command+control+option+shift.",
                                 "from": {
-                                    "key_code": "right_command",
+                                    "key_code": "right_option",
                                     "modifiers": {
                                         "optional": [
                                             "any"
