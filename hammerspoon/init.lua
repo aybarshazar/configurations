@@ -1,6 +1,7 @@
 -- Copy this file to ~/.hammerspoon/ directory
 
 -- Map this combination to a key with Karabiner-Elements
+-- Check out karabiner.json
 local hyper = { "cmd", "alt", "ctrl", "shift" }
 
 -----------------------------------------------
